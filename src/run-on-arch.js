@@ -90,7 +90,7 @@ async function main() {
   const dockerRunArgs = shlex.split(core.getInput('dockerRunArgs'));
 
   const githubToken = core.getInput('githubToken');
-  const githubActionsCache = core.getBooleanInput('githubActionsCache');
+  const githubActionsCache = core.getInput('githubActionsCache');
   // Copy environment variables from parent process
   const env = { ...process.env };
 
