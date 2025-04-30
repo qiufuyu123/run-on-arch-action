@@ -6,7 +6,6 @@ const path = require('path');
 const YAML = require('yaml');
 const shlex = require('shlex');
 const { exec } = require('@actions/exec');
-const githubActionsCache = core.getBooleanInput('githubActionsCache');
 function slug(str) {
   return str.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
 }
